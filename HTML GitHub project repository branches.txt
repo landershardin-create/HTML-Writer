@@ -1,4 +1,4 @@
-fusion-writer/
+HTML-Writer/
 ├── index.html                # Main landing page
 ├── assets/
 │   ├── css/
