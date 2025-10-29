@@ -1,4 +1,4 @@
-HTML-writer/
+HTML-Writer/
 ├── index.html                # Main landing page
 ├── assets/
 │   ├── css/
