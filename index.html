@@ -2,43 +2,65 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fusion Writer</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cat on a Roller Coaster</title>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(to top, #87ceeb, #ffffff);
+      overflow: hidden;
+      font-family: sans-serif;
+    }
+
+    .track {
+      position: absolute;
+      bottom: 100px;
+      width: 100%;
+      height: 10px;
+      background: #444;
+      border-radius: 5px;
+    }
+
+    .cat-car {
+      position: absolute;
+      bottom: 110px;
+      width: 100px;
+      height: 60px;
+      background: orange;
+      border-radius: 10px;
+      animation: ride 5s infinite linear;
+    }
+
+    .cat {
+      position: absolute;
+      top: -40px;
+      left: 25px;
+      width: 50px;
+      height: 50px;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/120px-Cat03.jpg') no-repeat center/cover;
+      border-radius: 50%;
+    }
+
+    @keyframes ride {
+      0% { left: -120px; transform: rotate(0deg); }
+      25% { transform: rotate(-10deg); }
+      50% { transform: rotate(10deg); }
+      75% { transform: rotate(-5deg); }
+      100% { left: 100vw; transform: rotate(0deg); }
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 40px;
+      color: #333;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Fusion Writer</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#demo">Demo</a></li>
-        <li><a href="#contribute">Contribute</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section id="about">
-      <h2>About the Project</h2>
-      <p>Fusion Writer is a modular social post generator designed to empower creators and collaborators. Built for clarity, automation, and community impact.</p>
-    </section>
-
-    <section id="demo">
-      <h2>Live Demo</h2>
-      <p>Try out the Fusion Writer in action. Generate posts, explore templates, and see how it works.</p>
-      <a href="demo.html" class="button">Launch Demo</a>
-    </section>
-
-    <section id="contribute">
-      <h2>Get Involved</h2>
-      <p>Want to contribute? Check out our GitHub repo, read the onboarding guide, and join the community.</p>
-      <a href="https://github.com/yourusername/fusion-writer" target="_blank" class="button">GitHub Repository</a>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Fusion Writer. Built with ❤️ in Harvest, Alabama.</p>
-  </footer>
+  <h1>🎢 Cat Riding a Roller Coaster</h1>
+  <div class="track"></div>
+  <div class="cat-car">
+    <div class="cat"></div>
+  </div>
 </body>
 </html>
