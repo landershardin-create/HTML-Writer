@@ -1,0 +1,16 @@
+{
+  "name": "MyKioskApp",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "kiosk_enabled": true,
+  "app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  },
+  "permissions": [
+    "unlimitedStorage",
+    "notifications"
+  ],
+  "required_platform_version": "8350"
+}
